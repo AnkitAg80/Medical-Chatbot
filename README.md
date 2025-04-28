@@ -10,13 +10,11 @@ Voice and Text Input: Patients can provide input via voice or text, with automat
 
 Speech-to-Text and Text-to-Speech: Utilizes Sarvam AI APIs for speech processing.
 
-Data Encryption: Encrypts sensitive patient data using MongoDB's client-side field-level encryption.
-
 PDF Report Generation: Generates downloadable patient reports in PDF format, which are auto-deleted after download for security.
 
 Admin Dashboard: Allows admins to view and download patient reports.
 
-MongoDB Integration: Stores user credentials and encrypted patient data securely.
+No User Data is stored in the device, even the report that is generated gets deleted from the device.
 
 
 Prerequisites
