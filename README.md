@@ -1,9 +1,12 @@
-# Medical-Chatbot
-Overview
+# Project Title: Medical-Chatbot
 
-This is a Medical Chatbot application designed to collect patient information, symptoms, and medical conditions in a secure and multilingual environment. The application supports voice and text input, integrates with external APIs for speech-to-text and text-to-speech, and stores encrypted patient data in MongoDB. It includes a login system for patients and admins, with admins able to view patient reports.
+## 1. Description / Objective
 
-Features
+The objective of this project is to develop a Medical Chatbot application that streamlines the collection of basic patient information prior to doctor consultation. It aims to reduce the time spent on initial screening by automating the gathering of symptoms and medical history, thereby enhancing the efficiency of hospital workflows and improving the overall doctor-patient interaction time.
+
+---
+
+## 2. Features
 Multilingual Support: Supports languages including English, Hindi, Bengali, Gujarati, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, and Telugu.
 
 Voice and Text Input: Patients can provide input via voice or text, with automatic fallback to text after repeated failed voice attempts.
@@ -16,15 +19,64 @@ Admin Dashboard: Allows admins to view and download patient reports.
 
 No User Data is stored in the device, even the report that is generated gets deleted from the device.
 
+## 3. Necessary Libraries / Installation Requirements
 
-Prerequisites
-Python 3.8+
-MongoDB Atlas Account: For storing user and patient data.
-Sarvam AI API Key: Required for speech-to-text and text-to-speech functionalities. Sign up at Sarvam AI to obtain your API key.
-Dependencies: Install the required Python packages listed in requirements.txt.
+Install the required libraries by running:
 
-To run this program, write this in the terminal:
+```bash
+    pip install streamlit
+    pip install ollama
+    pip install fpdf
+    pip install spacy
+    pip install pymongo
+    pip install sounddevice
+    pip install numpy
+    pip install requests
+    pip install deep-translator
+    pip install streamlit
+    pip install pymongo
+```
+---
+
+## 4. Commands to Run the Project
+
+Copy and paste the following commands into your terminal:
+
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/AnkitAg80/Medical-Chatbot.git
+
+# Step 2: Navigate into the project directory
+cd IIS_PROJECT_GROUP_7
+
+# Step 3: Install dependencies
+    pip install streamlit
+    pip install ollama
+    pip install fpdf
+    pip install spacy
+    pip install pymongo
+    pip install sounddevice
+    pip install numpy
+    pip install requests
+    pip install deep-translator
+    pip install streamlit
+    pip install pymongo
+
+# Step 4: Run the application
 streamlit run main.py
+```
+---
 
-Important Notes:
-You need to login to Sarvam Ai to get their API key and then replace it with mine so that it works for you.
+## 5. File Structure
+
+```
+IIS_PROJECT_GROUP_7
+│
+├── README.md                    
+├── main.py                 
+├── chatbot.py               
+├── Sample_report.pdf       
+├── Project_Demo_Video.mp4   
+```
+---
+> **Note:** Ensure Sarvam API key are set properly in your environment for full functionality. You need to login to Sarvam AI to get their API key and then replace it with ours so that it works for you.
